@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+.fadeIn{
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .fromTop{
   visibility: hidden;
   animation: bounceInTop 0.8s forwards 0.5s;
@@ -97,6 +105,27 @@
       transform: translateX(0);
   }
 } 
+
+
+
+
+@layer components{
+  .btn-white{
+    @apply px-3 py-0.5 text-white no-underline text-lg ring-4 rounded-md ring-white/20 
+    hover:text-black hover:bg-orange-300
+    active:scale-95 duration-200
+  }
+  .link{
+    @apply font-bold text-base no-underline text-white/50 
+    hover:text-orange-300 duration-200 
+    active:text-orange-300 active:no-underline
+  }
+  .link-active{
+    @apply font-bold text-base underline decoration-[3px] underline-offset-4 text-orange-300
+    hover:text-orange-300 duration-200 
+    active:text-orange-300 active:no-underline
+  }
+}
 
 
 @layer utilities{

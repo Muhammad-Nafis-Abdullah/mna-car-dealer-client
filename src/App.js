@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./components/Header";
 
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
 
   return (
     <div className="">
-      
-      <h1 className="container border-4 text-center animate-pulse">React is Working....</h1>
+
+      <Header/>
 
       <Routes>
         <Route path="/" element={''}/>

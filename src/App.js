@@ -1,7 +1,8 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
+import Home from "./components/Home";
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Header/>
 
       <Routes>
-        <Route path="/" element={''}/>
+        <Route path="/home" element={<Navigate to="/"/>}/>
+        <Route path="/" element={<Home/>}/>
 
         
 

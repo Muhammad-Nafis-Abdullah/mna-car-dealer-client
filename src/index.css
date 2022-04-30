@@ -111,17 +111,17 @@
 
 @layer components{
   .btn-white{
-    @apply px-3 py-0.5 text-white no-underline text-lg ring-4 rounded-md ring-white/20 
+    @apply px-3 py-0.5 text-white no-underline text-sm ring-4 rounded-md ring-white/20 
     hover:text-black hover:bg-orange-300
     active:scale-95 duration-200
   }
   .link{
-    @apply font-bold text-base no-underline text-white/50 
+    @apply font-bold text-sm no-underline text-white/50 
     hover:text-orange-300 duration-200 
     active:text-orange-300 active:no-underline
   }
   .link-active{
-    @apply font-bold text-base underline decoration-[3px] underline-offset-4 text-orange-300
+    @apply font-bold text-sm underline decoration-[3px] underline-offset-4 text-orange-300
     hover:text-orange-300 duration-200 
     active:text-orange-300 active:no-underline
   }
@@ -132,7 +132,9 @@
   .border-4{
     @apply border-black;
   }
-
+  .slide{
+    @apply block w-full h-[30rem] object-cover mx-auto;
+  }
 }
 
 

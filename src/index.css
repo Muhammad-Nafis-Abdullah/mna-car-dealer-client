@@ -106,24 +106,66 @@
   }
 } 
 
+.box {
+  position: relative;
+}
+.glowing::before{
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  background: linear-gradient(45deg, #374151cd,#1f2937d3,#111827f1,#161616e9);
+  background-size: 400%;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: 10px;
+  z-index: -1;
+  animation: glower 20s linear infinite;
+}
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+  
+  50% {
+    background-position: 400% 0;
+  }
+  
+  100% {
+    background-position: 0 0;
+  }
+}
+
 
 
 
 @layer components{
   .btn-white{
     @apply px-3 py-0.5 text-white no-underline text-sm ring-4 rounded-md ring-white/20 
-    hover:text-black hover:bg-orange-300
+    hover:text-black hover:bg-amber-300
     active:scale-95 duration-200
   }
   .link{
     @apply font-bold text-sm no-underline text-white/50 duration-200 transition-all
-    hover:text-orange-300
-    active:text-orange-300 active:no-underline active:scale-95
+    hover:text-amber-300
+    active:text-amber-300 active:no-underline active:scale-95
   }
   .link-active{
-    @apply font-bold text-sm underline decoration-[3px] underline-offset-4 text-orange-300
-    hover:text-orange-300 duration-200 
-    active:text-orange-300 active:scale-95
+    @apply font-bold text-sm underline decoration-[3px] underline-offset-4 text-amber-300
+    hover:text-amber-300 duration-200 
+    active:text-amber-300 active:scale-95
+  }
+  .item-card{
+    @apply basis-[21rem] rounded-lg shadow-md flex flex-col justify-between bg-white p-3;
+  }
+  .item-card img{
+    @apply object-scale-down h-40 mx-auto w-full;
+  }
+  .item-card p{
+    @apply text-xs font-medium h-[5rem] overflow-auto;
+  }
+  .item-card h5{
+    @apply flex justify-between items-center rounded;
   }
 }
 
@@ -136,5 +178,6 @@
     @apply block w-full h-[30rem] object-cover mx-auto;
   }
 }
+
 
 

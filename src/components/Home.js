@@ -3,9 +3,14 @@ import { Carousel } from 'react-bootstrap';
 import slide1 from '../images/slide-1.jpg';
 import slide2 from '../images/slide-2.jpg';
 import slide3 from '../images/slide-3.jpg';
+import useFetch  from '../hooks/useFetch';
+import ItemsCard from './ItemsCard';
 
 
 const Home = () => {
+    const items = useFetch('inventory.json')
+
+
     return (
         <section>
             
@@ -33,7 +38,12 @@ const Home = () => {
                 </Carousel.Item>
             </Carousel>
 
-            
+            <h1 className='text-center mt-5 mb-2 underline underline-offset-8'>Inventory</h1>
+            <div className='flex justify-center gap-3 flex-wrap container py-3'>
+                {
+                    items.slice(0,6).map(item => <ItemsCard key={item.id} item={item}/>)
+                }
+            </div>
 
         </section>
     );

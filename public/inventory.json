@@ -1,0 +1,92 @@
+[
+    {
+        "id": "626eb6a57431d9e89b12f166",
+        "name": "Toyota Prius",
+        "img": "https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2022/priusprime/le/1235/3u5/2.png",
+        "details": "Prius Prime offers impressive fuel economy and the flexibility of electric charging. Discover how much you can save with this plug-in hybrid's ability to drive solely on electricity and seamlessly switch to hybrid mode when the charge runs out.",
+        "price": "$24,625",
+        "quantity": "21",
+        "supplier": "Toyota Automobiles"
+    },
+    {
+        "id": "626eb6a53146e1e181483474",
+        "name": "Camry Hybrid",
+        "img": "https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2022/camryhybrid/xsehybrid/2557/2pt/2.png",
+        "details": "Camry Hybrid delivers impressive performance with an available sport-tuned suspension and added hybrid efficiency.From the 2020 model year forward, every Toyota hybrid battery warranty will cover 10 years from date of first use or 150,000 miles",
+        "price": "$27,480",
+        "quantity": "26",
+        "supplier": "Toyota Automobiles"
+    },
+    {
+        "id": "626eb6a5359ce4d25b337ca7",
+        "name": "Nissan Armada",
+        "img": "https://file.kelleybluebookimages.com/kbb/base/evox/CP/12427/2019-Nissan-Armada-front_12427_032_1861x888_KH3_cropped.png",
+        "details": "The Nissan Armada is a full-size SUV manufactured by Nissan for the North American market. From 2003 to 2015, the first-generation Armada was assembled in Canton, Mississippi based on the Nissan Titan.",
+        "price": "$49,150",
+        "quantity": "32",
+        "supplier": "Nissan Automobiles"
+    },
+    {
+        "id": "626eb6a5d42e6a155fbe29f6",
+        "name": "Nissan Magnite",
+        "img": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/Nissan_Magnite_1200x768.png",
+        "details": "The Nissan Magnite is a subcompact crossover SUV manufactured and marketed by Nissan. Unveiled in October 2020, the Magnite is placed below the Kicks in Nissan's global SUV lineup, making it the smallest Nissan crossover SUV worldwide.",
+        "price": "$33,210",
+        "quantity": "27",
+        "supplier": "Nissan Automobiles"
+    },
+    {
+        "id": "626eb6a567fd1903131e3142",
+        "name": "Nissan Maxima",
+        "img": "https://static.tcimg.net/vehicles/primary/089874d34a2d6c7d/2021-Nissan-Maxima-white-full_color-driver_side_front_quarter.png",
+        "details": "This isn't just the 4-Door Sports Car, it's a high-tech powerhouse full of excitement. Change from a premium ride to canyon carver at the touch of a button. Feel more confident, thanks to available advanced driver assist technologies, and for seamless connectivity, just plug in your compatible smartphone.",
+        "price": "$37,840",
+        "quantity": "35",
+        "supplier": "Nissan Automobiles"
+    },
+    {
+        "id": "626eb6a5143f001f8b3ab130",
+        "name": "  ",
+        "img": "  ",
+        "details": "  ",
+        "price": "  ",
+        "quantity": "  ",
+        "supplier": "  "
+    },
+    {
+        "id": "626eb6a54561aac180b629a0",
+        "name": "  ",
+        "img": "  ",
+        "details": "  ",
+        "price": "  ",
+        "quantity": "  ",
+        "supplier": "  "
+    },
+    {
+        "id": "626eb6a562f3c9024fc82c9a",
+        "name": "  ",
+        "img": "  ",
+        "details": "  ",
+        "price": "  ",
+        "quantity": "  ",
+        "supplier": "  "
+    },
+    {
+        "id": "626eb6a51e0486b545e2bf3f",
+        "name": "  ",
+        "img": "  ",
+        "details": "  ",
+        "price": "  ",
+        "quantity": "  ",
+        "supplier": "  "
+    },
+    {
+        "id": "626eb6a5c32eeb240b2616e0",
+        "name": "  ",
+        "img": "  ",
+        "details": "  ",
+        "price": "  ",
+        "quantity": "  ",
+        "supplier": "  "
+    }
+]

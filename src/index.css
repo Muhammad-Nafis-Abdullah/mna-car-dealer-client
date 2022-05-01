@@ -116,14 +116,14 @@
     active:scale-95 duration-200
   }
   .link{
-    @apply font-bold text-sm no-underline text-white/50 
-    hover:text-orange-300 duration-200 
-    active:text-orange-300 active:no-underline
+    @apply font-bold text-sm no-underline text-white/50 duration-200 transition-all
+    hover:text-orange-300
+    active:text-orange-300 active:no-underline active:scale-95
   }
   .link-active{
     @apply font-bold text-sm underline decoration-[3px] underline-offset-4 text-orange-300
     hover:text-orange-300 duration-200 
-    active:text-orange-300 active:no-underline
+    active:text-orange-300 active:scale-95
   }
 }
 

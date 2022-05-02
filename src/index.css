@@ -167,9 +167,15 @@
   .item-card h5{
     @apply flex justify-between items-center rounded ;
   }
+  .input-field , .text-field{
+    @apply border-[3px] border-gray-700/50 focus:border-gray-700/90 outline-none py-1 px-2 rounded
+  }
+  .text-field{
+    @apply min-h-[100px]
+  }
 }
 
-.item-card:hover{
+.item-container .item-card:hover{
   @apply ring-4 ring-offset-2 ring-gray-600 z-10;
 }
 .item-card:not(:first-child){
@@ -181,7 +187,9 @@
 .item-container:hover .item-card:not(:hover){
   @apply xl:blur-sm xl:duration-500
 }
-
+.num-field .input-field{
+  @apply placeholder:text-sm;
+}
 
 @layer utilities{
   .border-4{
@@ -189,6 +197,11 @@
   }
   .slide{
     @apply block w-full h-[30rem] object-cover mx-auto;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    @apply m-0;
   }
 }
 

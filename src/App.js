@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { useEffect } from "react";
+import Inventory from "./components/Inventory";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       <Routes>
         <Route path="/home" element={<Navigate to="/"/>}/>
         <Route path="/" element={<Home/>}/>
+        <Route path="/inventory" element={<Inventory/>}/>
+        <Route path="/inventory/:id" element={<Inventory/>}/>
 
         
 

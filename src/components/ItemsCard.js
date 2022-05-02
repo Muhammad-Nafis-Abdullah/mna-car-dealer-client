@@ -5,7 +5,7 @@ const ItemsCard = ({item}) => {
 
 
     return (
-        <div className='item-card box glowing'>
+        <div className='item-card  border-[4px]'>
             <img src={img} alt="" />
             <h4>{name} <h6 className='text-center text-gray-900/80'>Supplier: {supplier}</h6></h4>
             <p>{details}</p>

@@ -39,9 +39,9 @@ const Home = () => {
             </Carousel>
 
             <h1 className='text-center mt-5 mb-2 underline underline-offset-8'>Inventory</h1>
-            <div className='flex justify-center gap-3 flex-wrap container py-3'>
+            <div className='flex justify-center gap-3 container my-3 flex-wrap item-container'>
                 {
-                    items.slice(0,6).map(item => <ItemsCard key={item.id} item={item}/>)
+                    items.slice(0,5).map(item => <ItemsCard key={item.id} item={item}/>)
                 }
             </div>
 

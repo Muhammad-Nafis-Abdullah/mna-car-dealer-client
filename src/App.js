@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import { useEffect } from "react";
 import Inventory from "./components/Inventory";
+import ManageInventory from "./components/ManageInventory";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Route path="/inventory" element={<Inventory/>}/>
         <Route path="/inventory/:id" element={<Inventory/>}/>
 
-        
+        <Route path="/manage-inventory" element={<ManageInventory/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>

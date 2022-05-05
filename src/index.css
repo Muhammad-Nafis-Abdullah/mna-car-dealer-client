@@ -188,7 +188,7 @@
   @apply xl:blur-sm xl:duration-500
 }
 .num-field .input-field{
-  @apply placeholder:text-sm;
+  @apply placeholder:text-xs;
 }
 
 @layer utilities{

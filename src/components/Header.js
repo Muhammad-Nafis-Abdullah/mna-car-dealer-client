@@ -28,13 +28,12 @@ const Header = () => {
                 <hr className='bg-white p-0.5 rounded-full sm:p-0'/>
                     <Nav className="me-auto flex justify-center items-center gap-2.5 sm:mx-auto">
                         <NavLink to={'/manage-inventory'} className={style} replace>Manage Inventory</NavLink>
-                        <NavLink to={'/add-items'} className={style} replace>Add Items</NavLink>
+                        <NavLink to={'/add-inventory'} className={style} replace>Add Inventory</NavLink>
                         <NavLink to={'/my-items'} className={style} replace>My Items</NavLink>
                     </Nav>
                     <hr className='bg-white p-0.5 rounded-full sm:p-0'/>
                     <Nav className="flex justify-center items-center gap-2.5 py-2">
                         <NavLink to={'/'} className={style} replace><HomeIcon className={`h-6`}/></NavLink>
-                        <NavLink to={'/inventory'} className={style} replace>Inventory</NavLink>
                         <NavLink to={'/blogs'} className={style} replace>Blogs</NavLink>
                         <NavLink to={'/login'} className='btn-white font-medium' replace>Login</NavLink>
                         <NavLink to={'/'} className='btn-white font-medium' replace>Logout</NavLink>

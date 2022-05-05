@@ -1,14 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 
 
 const ManageInventory = () => {
-    const items = useFetch('inventory.json')
+    const items = useFetch('inventory.json');
+    const navigate = useNavigate();
 
 
     return (
-        <div className='container'>
-            <section className='space-y-1 mt-4'>
+        <div className='container flex flex-col justify-center gap-3 py-4'>
+            <section className='space-y-1'>
+                <h2 className='text-center underline underline-offset-2 mb-6'>All Inventories</h2>
                 <div className='grid grid-cols-6 justify-items-center underline underline-offset-2 decoration-[3px]'>
                     <h6>Serial</h6>
                     <h6 className='col-span-3'>Name and Suppliers</h6>
@@ -28,6 +31,9 @@ const ManageInventory = () => {
                     })
                 }
             </section>
+            <button onClick={()=> {
+                navigate('/add-inventory');
+            }} className='btn btn-info self-stretch mx-4 mt-5 fw-semi'>Add New Item</button>
         </div>
     );
 };

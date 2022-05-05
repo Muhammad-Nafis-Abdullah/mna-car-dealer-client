@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import { useEffect } from "react";
 import Inventory from "./components/Inventory";
 import ManageInventory from "./components/ManageInventory";
+import AddInventory from "./components/AddInventory";
 
 
 function App() {
@@ -25,10 +26,10 @@ function App() {
       <Routes>
         <Route path="/home" element={<Navigate to="/"/>}/>
         <Route path="/" element={<Home/>}/>
-        <Route path="/inventory" element={<Inventory/>}/>
         <Route path="/inventory/:id" element={<Inventory/>}/>
 
         <Route path="/manage-inventory" element={<ManageInventory/>}/>
+        <Route path="/add-inventory" element={<AddInventory/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>

@@ -206,4 +206,14 @@
 }
 
 
+.input-container{
+  @apply relative z-0 mb-8 w-full;
+}
 
+.input-field{
+  @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-4 border-gray-900/20 appearance-none focus:outline-none focus:border-sky-600;
+}
+
+.input-label{
+  @apply absolute text-base font-medium text-gray-900 duration-300 -translate-y-8 top-3 -z-10 origin-[0];
+}

@@ -10,10 +10,11 @@ import ManageInventory from "./components/ManageInventory";
 import AddInventory from "./components/AddInventory";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from "react-toastify";
 import Private from "./components/Private";
 import MyItems from "./components/MyItems";
+import Footer from "./components/Footer";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "./firebase.init";
 
@@ -33,7 +34,7 @@ function App() {
 
 
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col justify-between">
 
       <Header/>
       <ToastContainer
@@ -66,6 +67,8 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
+
+      <Footer/>
 
     </div>
   );

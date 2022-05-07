@@ -13,6 +13,7 @@ import Register from "./components/Register";
 import Private from "./components/Private";
 import MyItems from "./components/MyItems";
 import Footer from "./components/Footer";
+import Blog from "./components/Blog"
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -63,6 +64,7 @@ function App() {
             <Route path="/my-items" element={<MyItems/>} />
           </>
         }
+        <Route path="/blogs" element={<Blog/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/*" element={<NotFound/>}/>

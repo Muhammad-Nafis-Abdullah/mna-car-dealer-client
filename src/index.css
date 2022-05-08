@@ -239,3 +239,9 @@
 .blog-key{
   @apply text-amber-600/80 ;
 }
+
+.extra{
+  @apply m-10 shrink py-3 px-5 rounded-xl bg-amber-400 space-y-3 text-black font-medium border-[3px] border-amber-500 
+  hover:scale-105 duration-300 hover:ring-4 ring-offset-2 ring-amber-400;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.343);
+}

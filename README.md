@@ -11,18 +11,15 @@
 ***
 
 ### **Website feature and functionlity**
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* Responsive Navbar
+* Animated Inventories at Home page
+* Private important route
+* Secret Route Implemented
+* All inventories table view
+* Form for add new inventory
+* Switch Login and Logout button
+* Animated all page
+
 
 ***
 

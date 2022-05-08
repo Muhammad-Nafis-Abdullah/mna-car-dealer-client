@@ -42,14 +42,14 @@ const AddInventory = () => {
         <div className='flex flex-col gap-3 items-center justify-center py-5 fadeIn'>
             <form ref={addForm} onSubmit={submit} className='ring-4 ring-offset-4 max-w-sm rounded-sm flex flex-col justify-center p-2 w-full gap-3'>
                 <h3 className='text-center underline-offset-2 underline mb-4'>Add Inventory Form</h3>
-                <input type="text" className='input-field' placeholder='Items Name' name='name'/>
-                <input type="text" className='input-field' placeholder='image url' name='url'/>
-                <textarea type="text" className='text-field' placeholder='Description' name='details'/>
+                <input type="text" className='input-field' placeholder='Items Name' name='name' required/>
+                <input type="text" className='input-field' placeholder='image url' name='url' required/>
+                <textarea type="text" className='text-field' placeholder='Description' name='details' required/>
                 <div className='flex justify-center gap-2 items-center num-field'>
-                    <input type="number" className='input-field min-w-0' placeholder='$ Price' name='price'/>
-                    <input type="number" className='input-field min-w-0' placeholder='Quantity' name='quantity'/>
+                    <input type="number" className='input-field min-w-0' placeholder='$ Price' name='price' required/>
+                    <input type="number" className='input-field min-w-0' placeholder='Quantity' name='quantity' required/>
                 </div>
-                <input type="text" className='input-field' placeholder='Suppliers Name' name='supplier'/>
+                <input type="text" className='input-field' placeholder='Suppliers Name' name='supplier' required/>
                 <input type="submit" value="Add Inventory" className='btn btn-dark'/>
             </form>
         </div>

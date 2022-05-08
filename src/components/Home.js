@@ -8,11 +8,11 @@ import ItemsCard from './ItemsCard';
 
 
 const Home = () => {
-    const items = useFetch('inventory.json')
-
+    const items = useFetch('https://arcane-shore-09021.herokuapp.com/inventories')
+    console.log(items);
 
     return (
-        <section>
+        <section className='fadeIn'>
             
             <Carousel>
                 <Carousel.Item>
@@ -41,7 +41,7 @@ const Home = () => {
             <h1 className='text-center mt-5 mb-2 underline underline-offset-8'>Inventory</h1>
             <div className='flex justify-center gap-3 container my-3 flex-wrap item-container'>
                 {
-                    items.slice(0,5).map(item => <ItemsCard key={item.id} item={item}/>)
+                    items.slice(0,5).map(item => <ItemsCard key={item._id} item={item}/>)
                 }
             </div>
 

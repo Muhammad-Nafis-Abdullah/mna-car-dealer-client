@@ -50,7 +50,7 @@ const Register =  (e) => {
     }
 
     return (
-        <div className='px-3'>
+        <div className='px-3 fadeIn'>
             {
                 regLoading && <Loading/>
             }

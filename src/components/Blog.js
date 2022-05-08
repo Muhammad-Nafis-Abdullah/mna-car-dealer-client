@@ -3,7 +3,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container min-h-[calc(100vh-166.5px)] flex flex-col justify-start items-center gap-10 px-5 py-8'>
+        <div className='container min-h-[calc(100vh-166.5px)] flex flex-col justify-start items-center gap-10 px-5 py-8 fadeIn'>
             <h3 className='text-center text-2xl sm:text-3xl font-medium'>Question and Answer</h3>
             <section className='flex flex-wrap justify-center items-center gap-8'>
                 <div  className='blog-card fromTop'>

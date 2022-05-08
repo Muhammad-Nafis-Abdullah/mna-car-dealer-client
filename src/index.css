@@ -178,10 +178,10 @@
 .item-container .item-card:hover{
   @apply ring-4 ring-offset-2 ring-gray-600 z-10;
 }
-.item-card:not(:first-child){
+.item-container .item-card:not(:first-child){
   @apply xl:-ml-[12rem];
 }
-.item-card:not(:last-child):hover{
+.item-container .item-card:not(:last-child):hover{
   @apply xl:mr-[11rem] xl:duration-500;
 }
 .item-container:hover .item-card:not(:hover){

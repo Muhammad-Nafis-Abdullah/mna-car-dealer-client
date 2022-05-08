@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ItemsCard = ({item}) => {
-    const {id,name,img,details,price,quantity,supplier} = item;
+    const {_id,name,img,details,price,quantity,supplier} = item;
     const navigate = useNavigate();
 
     return (
@@ -11,7 +11,7 @@ const ItemsCard = ({item}) => {
             <h4>{name} <h6 className='text-center text-gray-900/80'>Supplier: {supplier}</h6></h4>
             <p>{details}</p>
             <h5><span>Price: {price}</span><span>Quantity: {quantity}</span></h5>
-            <button className='btn btn-outline-dark' onClick={() => navigate(`/inventory/${id}`)}>Update</button>
+            <button className='btn btn-outline-dark' onClick={() => navigate(`/inventory/${_id}`)}>Update</button>
         </div>
     );
 };

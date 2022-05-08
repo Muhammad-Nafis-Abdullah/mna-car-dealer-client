@@ -64,7 +64,7 @@ const Login = () => {
     }
 
     return (
-        <div className='min-h-[90vh] flex justify-center items-center px-3'>
+        <div className='min-h-[90vh] flex justify-center items-center px-3 fadeIn'>
             {
                 (googleLoading || authLoading || emailLoading) && <Loading/>
             }

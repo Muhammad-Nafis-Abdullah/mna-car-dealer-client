@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import useFetch from '../hooks/useFetch';
+import { toast } from 'react-toastify';
 
 
 const ManageInventory = () => {
-    const items = useFetch('https://arcane-shore-09021.herokuapp.com/inventories');
     const navigate = useNavigate();
 
+    const [inventories,setInventories] = useState([]);
+
+    useEffect(()=> {
+        fetch('https://arcane-shore-09021.herokuapp.com/inventories').then(response => response.json()).then(data => setInventories(data))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
+
+
+
+    const deleteInventory = (id)=> {
+        const confirmDelete = window.confirm('Are you sure to delete the inventory ?');
+        if (confirmDelete) {
+            const url = `http://localhost:5000/inventory/${id}`;
+            fetch(url, {
+                method: "DELETE",
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data);
+                    const rest = inventories.filter((p) => p._id !== id);
+                    setInventories(rest);
+                    toast.dark(`Inventory Deleted Successfully`);
+                });
+        } else {
+            return;
+        }
+    }
 
     return (
         <div className='container flex flex-col justify-center gap-3 py-4 fadeIn'>
@@ -18,7 +44,7 @@ const ManageInventory = () => {
                     <h6>Quantity</h6>
                 </div>
                 {
-                    items.map((item,index)=> {
+                    inventories.map((item,index)=> {
                         return (<div key={item._id} className='grid grid-cols-6 border py-1 place-content-center place-items-center'>
                                     <h6>{index+1}</h6>
                                     <div className='col-span-3 flex items-end gap-3'>
@@ -26,7 +52,7 @@ const ManageInventory = () => {
                                         <h6 className='text-xs text-gray-600'>({item.supplier})</h6>
                                     </div>
                                     <h6>{item.quantity}</h6>
-                                    <button className='bg-red-500 text-white px-2 py-1 rounded-full text-xs active:scale-95 duration-200 active:ring-4 ring-red-500 ring-offset-2'>Delete</button>
+                                    <button onClick={()=> deleteInventory(item._id)} className='bg-red-500 text-white px-2 py-1 rounded-full text-xs active:scale-95 duration-200 active:ring-4 ring-red-500 ring-offset-2'>Delete</button>
                                 </div>);
                     })
                 }

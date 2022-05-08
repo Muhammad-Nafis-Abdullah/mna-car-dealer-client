@@ -9,7 +9,6 @@ import ItemsCard from './ItemsCard';
 
 const Home = () => {
     const items = useFetch('https://arcane-shore-09021.herokuapp.com/inventories')
-    console.log(items);
 
     return (
         <section className='fadeIn'>

@@ -7,69 +7,33 @@ const Blog = () => {
             <h3 className='text-center text-2xl sm:text-3xl font-medium'>Question and Answer</h3>
             <section className='flex flex-wrap justify-center items-center gap-8'>
                 <div  className='blog-card fromTop'>
-                    <h6><span className="Q-A">Question 1:</span> What is the difference between <span className='blog-key'>Authorization</span> & <span className='blog-key'>Authentication?</span></h6>
+                    <h6><span className="Q-A">Question 1:</span> Difference Between JavaScript and NodeJS?</h6>
                     <p>
                         <span className="Q-A">Answer :</span><br />
-                        <strong className="blog-key">Authentication :</strong> Authentication
-                        is to verify the data of a user to give him the access for the next
-                        process of website benefits. <br />
-                        <strong className="blog-key">Authorization :</strong> Authorization
-                        is to give a user permission to use resources or to do further
-                        activities.
-                        <br />
-                        <strong>Simply,</strong> Authentication is the process of verifying
-                        who a user is, while Authorization is the process of verifying what
-                        they have access to.
+                        JavaScript is a lightweight, cross-platform, interpreted scripting programming language that is primarily used for client-side scripting. It's built into both Java and HTML. On the other hand, Node. js is a server-side scripting language based on the Google Chrome V8 engine.
                     </p>
                 </div>
                 <div className='blog-card fromRight'>
-                    <h6><span className="Q-A">Question 2:</span> Why are you using <span className="blog-key">Firebase</span>? What other options do you have to implement <span className="blog-key">Authentication</span>?</h6>
+                    <h6><span className="Q-A">Question 2:</span> When should we use Node JS and when should we use MongoDB?</h6>
                     <p>
                         <span className="Q-A">Answer :</span><br />
-                        Firebase is  less technical and less time consuming than writing complete backend code for dynamic apps. If developer ultimately want to host and manage an app in the cloud and can also consider this tool. Firebase is serverless, so there is no worry about cloud server configuration technology. As a Google Cloud service, developer can also access other Google products and features such as Google Drive and spreadsheets. For example, developer can import dummy data from Google Sheets and use it temporarily to deploy the application.
-                        <br />
-                        Some firebase Alternatives are :
-                        1.Parse, 2.Back4App, 3.AWS Amplify, 4.Kuzzle, 5.Couchbase, 6.NativeScript, 7.RxDB, 8.Flutter.
+                        Node JS : Node JS is basically non-blocking JavaScript run time. Node JS is widely used in real time application build. For example, in an application, the user sends a request to the server very quickly and the server sends data to the user very quickly.
+                        Mongo DB : We use MongoDBwhen our data does not fit well with the schema of the document centric and relational database. When I have to compromise on a large scale and when I prototype quickly, in all these cases it is better to use the Mangodib database and almost everyone does it.
                     </p>
                 </div>
                 <div className='blog-card fromLeft'>
-                    <h6><span className="Q-A">Question 3:</span> What other services does <span className="blog-key">Firebase</span> provide other than <span className="blog-key">Authentication</span>?</h6>
+                    <h6><span className="Q-A">Question 3:</span> Difference Between Sql and NoSql Database?</h6>
                     <p>
                         <span className="Q-A">Answer :</span><br />
-                        <strong className='blog-key'>Firebase Analytics :</strong> Firebase Analytics presents
-                        data about the user behavior of applications and suggests the
-                        improvement of the performance.
-                        <br />
-                        <strong className='blog-key'>Cloud Messaging :</strong> Cloud Messaging is a messaging
-                        tool that helps the companies to receive and deliver messages on
-                        applications at no cost.
-                        <br />
-                        <strong className='blog-key'>Realtime Database :</strong> Realtime Database is a cloud
-                        hosted NoSQL Database that stores and syncs data of the users in
-                        real time. <br />
-                        <strong>Test Lab :</strong> Test Lab is an app testing
-                        infrastructure by which developers can test the applications easily.
-                        <br />
+                        Sql : It is a Relational Database Management System (RDBMS) This database has a default schema.This database is not suitable for storing classified data.
+                        Nosql : It is a Non-relational or distributed database system. Their schema is dynamic These databases are most commonly used for storing classified data
                     </p>
                 </div>
                 <div className='blog-card fromBottom'>
-                    <h6><span className="Q-A">Question 4:</span> What other services does <span className="blog-key">Firebase</span> provide other than <span className="blog-key">Authentication</span>?</h6>
+                    <h6><span className="Q-A">Question 4:</span> What is the purpose of JWT and how does it work?</h6>
                     <p>
                         <span className="Q-A">Answer :</span><br />
-                        <strong className='blog-key'>Firebase Analytics :</strong> Firebase Analytics presents
-                        data about the user behavior of applications and suggests the
-                        improvement of the performance.
-                        <br />
-                        <strong className='blog-key'>Cloud Messaging :</strong> Cloud Messaging is a messaging
-                        tool that helps the companies to receive and deliver messages on
-                        applications at no cost.
-                        <br />
-                        <strong className='blog-key'>Realtime Database :</strong> Realtime Database is a cloud
-                        hosted NoSQL Database that stores and syncs data of the users in
-                        real time. <br />
-                        <strong>Test Lab :</strong> Test Lab is an app testing
-                        infrastructure by which developers can test the applications easily.
-                        <br />
+                        JWT is a token used to enhance security when exchanging data between client and server. This allows the server to verify that the person requesting the data is the real client.Its function is that when the user logs in, one copy of this token is saved in the user's browser and another copy is saved in the database. Once the token expires, a new token is generated.
                     </p>
                 </div>
             </section>

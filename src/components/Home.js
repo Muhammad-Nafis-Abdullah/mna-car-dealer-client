@@ -44,6 +44,22 @@ const Home = () => {
                 }
             </div>
 
+
+            <div className="extra">
+                <h5 className='text-center font-medium text-white'>Chamber 1 : Chittagong</h5>
+                <address>Halishahar, K-block R/A , Road No. 05 </address>
+                <p>Telephone : 03148579325</p>
+                <p>Visiting Day : Sat, Mon, Wed</p>
+                <p>Visition Time : 6:00pm - 12:00am</p>
+            </div>
+            <div className="extra">
+                <h5 className='text-center'>Chamber 2 : Dhaka</h5>
+                <address>Halishahar, K-block R/A , Road No. 05 </address>
+                <p>Telephone : 0314462325</p>
+                <p>Visiting Day : Sun, Tue, Thu</p>
+                <p>Visition Time : 6:00pm - 12:00am</p>
+            </div>
+
         </section>
     );
 };
